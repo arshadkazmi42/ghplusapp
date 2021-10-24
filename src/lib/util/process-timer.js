@@ -35,4 +35,4 @@ class ProcessTimer {
 };
 
 
-module.exports = ProcessTimer;
+export default ProcessTimer;

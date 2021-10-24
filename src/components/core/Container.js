@@ -12,6 +12,7 @@ const StyledContainer = styled.div`
   border-right: ${props => props.theme.borderRight};
   border-top: ${props => props.theme.borderTop};
   box-shadow: ${props => props.theme.boxShadow};
+  text-shadow: ${props => props.theme.textShadow};
   cursor: ${props => props.theme.cursor};
   display: ${props => props.theme.display};
   flex: ${props => props.theme.flex};

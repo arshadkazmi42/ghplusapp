@@ -1,20 +1,20 @@
 'use strict';
 
-
 import Axios from 'axios';
 
-DEFAULT_TIMEOUT = 1000;
+
+const DEFAULT_TIMEOUT = 1000;
 
 
 class Request {
 
-  constructor(url) {
+  constructor(url, headers) {
     this.url = url;
 
-    this.Axios = this.init(url);
+    this.Axios = this.init(url, headers);
   }
 
-  
+
   init(url, headers) {
 
     return Axios.create({
@@ -25,11 +25,11 @@ class Request {
   }
 
 
-  get() {
+  async getAsync() {
 
-    return this.Axios.get();
+    return await this.Axios.get();
   }
 };
 
 
-module.exports = Request;
+export default Request;

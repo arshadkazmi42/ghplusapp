@@ -20,11 +20,11 @@ class Logger {
     console.info(line);
   }
 
-  
+
   warn(line) {
     console.warn(line);
   }
 };
 
 
-module.exports = Logger;
+export default Logger;

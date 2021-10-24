@@ -27,4 +27,4 @@ COLORS.PALETTE = {
 };
 
 
-module.exports = COLORS;
+export default COLORS;

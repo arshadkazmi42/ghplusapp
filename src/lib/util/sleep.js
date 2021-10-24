@@ -1,11 +1,10 @@
 'use strict';
 
+import Logger from './logger';
 
-const Logger = require("./logger");
 
-
-MIN_SECONDS = 100
-MAX_SECONDS = 1000
+const MIN_SECONDS = 100
+const MAX_SECONDS = 1000
 
 
 class Sleep {
@@ -37,4 +36,4 @@ class Sleep {
 };
 
 
-module.exports = Sleep;
+export default Sleep;
